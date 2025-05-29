@@ -55,7 +55,7 @@ const AppTopbar = forwardRef<AppTopbarRef>((props, ref) => {
     const logout = () => {
         dispatch(signOut());
         Swal.fire({
-            title: t('LOGOUT_SUCCESS'),
+            title: "Logout Success!",
             icon: "success",
             draggable: true
             });
@@ -120,7 +120,7 @@ const AppTopbar = forwardRef<AppTopbarRef>((props, ref) => {
                     [isRTL() ? 'marginLeft' : 'marginRight']: isRTL() ? '0.5rem' : '1rem'
                     }}
                 />
-                <span>Afghan Store</span>
+                <span>Afghan</span>
                 </Link>
 
             <button ref={menubuttonRef} type="button" className="p-link layout-menu-button layout-topbar-button" onClick={onMenuToggle}>
